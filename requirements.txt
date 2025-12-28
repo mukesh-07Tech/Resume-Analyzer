@@ -1,0 +1,6 @@
+flask
+pandas
+scikit-learn
+nltk
+PyPDF2
+docx2txt
