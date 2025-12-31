@@ -58,8 +58,7 @@ This project helps users identify the most suitable job roles based on their ski
           streamlit run app.py
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/your-username/Resume-Analyzer.git
-cd Resume-Analyzer
+        https://github.com/mukesh-07Tech/Resume-Analyzer.git
 
 ```
 ### 🙏Thank You
