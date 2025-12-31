@@ -1,6 +1,4 @@
-flask
 pandas
 scikit-learn
-nltk
+streamlit
 PyPDF2
-docx2txt

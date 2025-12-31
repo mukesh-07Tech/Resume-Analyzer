@@ -1,12 +1,13 @@
 import re
-from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS
 
 
-def clean_text(text):
-    if not text:
-        return ""
+def clean_text(text: str) -> str:
+    """Normalize text: lowercase, replace non-letters with spaces, collapse spaces."""
+    if not isinstance(text, str):
+        text = str(text or "")
     text = text.lower()
-    text = re.sub(r"[^a-zA-Z ]", " ", text)
-    words = text.split()
-    words = [w for w in words if w not in ENGLISH_STOP_WORDS]
-    return " ".join(words)
+    # Replace any sequence of non-letter characters with a single space
+    text = re.sub(r"[^a-z]+", " ", text)
+    # Collapse multiple spaces and trim
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
